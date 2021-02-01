@@ -80,9 +80,8 @@
     <aside class="main-sidebar sidebar-dark-primary elevation-4">
       <!-- Brand Logo -->
       <a href="index.html" class="brand-link">
-        <img src="./dist/img/Konitech-logo.png" alt="Konitech" class="brand-image"
-          style="opacity: .8">
-        <span class="brand-text font-weight-light">Smart Pass</span> 
+        <img src="./dist/img/Konitech-logo.png" alt="Konitech" class="brand-image" style="opacity: .8">
+        <span class="brand-text font-weight-light">Smart Pass</span>
       </a>
 
       <!-- Sidebar -->
@@ -201,55 +200,47 @@
       <!-- /.content-header -->
 
       <!-- Main content -->
-      <section class="content"> 
+      <section class="content">
         <div class="container-fluid">
           <div class="card">
-            <form class="ml-3">
-              <div class="form-row align-items-center">
-                <div class="col-auto my-1">
-                  <label for="startDate">Data Início</label>
-                  <input class="form-control" type="date" id="startDate">
-                </div>
-                <div class="col-auto my-1">
-                  <div class="custom-control custom-checkbox mr-sm-2">
-                    <label for="finishDate">Data Fim</label>
-                    <input class="form-control" type="date" id="finishDate">
-                  </div>
-                </div>
-                <div class="col-auto my-1">
-                  <label for="organizations">Organizações</label>
-                  <select class="form-control" title="organizações" id="organizations">
-                    <option>selecione</option>
-                    <option value="587f6179-3762-44c4-9a2f-0571bc968c07">Bradesco</option>
-                    <option value="252d8716-5cf0-4de7-a94c-885f7a6cf93d">nivel 2</option>
-                    <option value="db69f1ab-55d7-4a76-8d8e-e16084283c21">Konitech</option>
-                    <option value="fc059161-4289-4f30-94e0-faea8c3766a6">nivel 1</option>
-                    <option value="ea00cbbe-7da1-4753-aa82-fbc1d668d5bf">Bradesco-Grupo2</option>
-                  </select>
 
-                </div>
-                <div class="col-auto my-1">
-                  <label for="devices">Dispositivos</label>
-                  <select class="form-control" title="dispositivos" id="devices">
-                    <option>selecione</option>
-                    <option value="ffc8e89b-1711-436c-a282-2717bb8370c1">SaintGobain Portaria PROD</option>
-                    <option value="91495d4c-11d9-45c3-8480-667e97ea8a21">ArmeneBW</option>
-                    <option value="4baecc90-6997-469c-8a79-7a14b716b0d3">teste mips italtel</option>
-                    <option value="afedf17a-0a98-44ae-b9ed-7cb2282b2e1b">Casa-Fabio-DEV2</option>
-                    <option value="b50c3fd0-7eb9-48ee-9145-9aacda9cd3ee">Italtel_BW_SP</option>
-                    <option value="25daf527-efeb-46d0-b11b-ae2e445fd409">iTech</option>
-                    <option value="0aa64fa6-c279-44ee-94d6-dc452d59a254">Face1</option>
-                    <option value="5c6c5577-2e77-4274-80a6-df7627e16aa2">SaintGobain Veiculos</option>
-                  </select>
-                </div>
+            <form class="form-inline ml-3 mt-2">
 
-                <div class="col-auto my-1">
-                  <button type="submit" class="btn form-control btn-primary">
-                    <i class="fas fa-sync-alt"></i>
-                  </button>
-                </div>
-              </div>
+              <label class="form-control-label mb-2 mr-sm-2" for="startDate">Data Início</label>
+              <input class="form-control mb-2 mr-sm-2" type="date" id="startDate">
+
+              <label class="form-control-label mb-2 mr-sm-2" for="finishDate">Data Fim</label>
+              <input class="form-control mb-2 mr-sm-2" type="date" id="finishDate">
+
+              <label class="form-control-label mb-2 mr-sm-2" for="organizations">Organizações</label>
+              <select class="form-control mb-2 mr-sm-2" title="organizações" id="organizations">
+                <option>selecione</option>
+                <option value="587f6179-3762-44c4-9a2f-0571bc968c07">Bradesco</option>
+                <option value="252d8716-5cf0-4de7-a94c-885f7a6cf93d">nivel 2</option>
+                <option value="db69f1ab-55d7-4a76-8d8e-e16084283c21">Konitech</option>
+                <option value="fc059161-4289-4f30-94e0-faea8c3766a6">nivel 1</option>
+                <option value="ea00cbbe-7da1-4753-aa82-fbc1d668d5bf">Bradesco-Grupo2</option>
+              </select>
+
+              <label class="form-control-label mb-2 mr-sm-2" for="devices">Dispositivos</label>
+              <select class="form-control mb-2 mr-sm-2" title="dispositivos" id="devices">
+                <option>selecione</option>
+                <option value="ffc8e89b-1711-436c-a282-2717bb8370c1">SaintGobain Portaria PROD</option>
+                <option value="91495d4c-11d9-45c3-8480-667e97ea8a21">ArmeneBW</option>
+                <option value="4baecc90-6997-469c-8a79-7a14b716b0d3">teste mips italtel</option>
+                <option value="afedf17a-0a98-44ae-b9ed-7cb2282b2e1b">Casa-Fabio-DEV2</option>
+                <option value="b50c3fd0-7eb9-48ee-9145-9aacda9cd3ee">Italtel_BW_SP</option>
+                <option value="25daf527-efeb-46d0-b11b-ae2e445fd409">iTech</option>
+                <option value="0aa64fa6-c279-44ee-94d6-dc452d59a254">Face1</option>
+                <option value="5c6c5577-2e77-4274-80a6-df7627e16aa2">SaintGobain Veiculos</option>
+              </select>
+
+              <button type="submit" class="btn mb-2 btn-primary">
+                <i class="fas fa-sync-alt"></i>
+              </button>
+
             </form>
+
           </div>
           <!-- Small boxes (Stat box) -->
           <div class="row">
