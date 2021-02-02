@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Smart Pass | Convidar Pessoa</title>
+
+  <!-- Google Font: Source Sans Pro -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="../../plugins/fontawesome-free/css/all.min.css">
+  <!-- Theme style -->
+  <link rel="stylesheet" href="../../dist/css/adminlte.min.css">
+
+  <script src="../dist/js/pages/invite.js"></script>
+
+</head>
+
+<body class="hold-transition sidebar-mini">
+  <!-- Site wrapper -->
+  <div class="wrapper">
+    <!-- Navbar -->
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+
+      <!-- Left navbar links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+
+      <!-- Right navbar links -->
+      <ul class="navbar-nav ml-auto">
+        <!-- Messages Dropdown Menu -->
+
+        <!-- Notifications Dropdown Menu -->
+        <li class="nav-item">
+          <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+            <i class="fas fa-expand-arrows-alt"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-widget="control-sidebar" data-slide="true" href="#" role="button">
+            <i class="fas fa-th-large"></i>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- /.navbar -->
+
+    <!-- Main Sidebar Container -->
+    <aside class="main-sidebar sidebar-dark-primary elevation-4">
+      <!-- Brand Logo -->
+      <a href="index.html" class="brand-link">
+        <img src="../dist/img/Konitech-logo.png" alt="Konitech" class="brand-image" style="opacity: .8">
+        <span class="brand-text font-weight-light">Smart Pass</span>
+      </a>
+
+      <!-- Sidebar -->
+      <div class="sidebar">
+        <!-- Sidebar user panel (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+          <div class="image">
+            <img src="../dist/img/avatar.png" class="img-circle elevation-2" alt="User Image">
+          </div>
+          <div class="info">
+            <a href="#" class="d-block">Konitech</a>
+          </div>
+        </div>
+
+        <!-- Sidebar Menu -->
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+            <li class="nav-item">
+              <a href="../index.html" class="nav-link">
+                <i class="nav-icon fas fa-tachometer-alt"></i>
+                <p>
+                  Início
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="report.html" class="nav-link">
+                <i class="nav-icon fas fa-file"></i>
+                <p>
+                  Relatório
+                </p>
+              </a>
+            </li>
+
+            <!-- Menu Separator -->
+            <li class="nav-header"></li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-briefcase"></i>
+                <p>
+                  Organizações
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-mobile-alt"></i>
+                <p>
+                  Dispositivos
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-user-friends"></i>
+                <p>
+                  Pessoas
+                </p>
+              </a>
+            </li>
+
+            <!-- Menu Separator -->
+            <li class="nav-header"></li>
+
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-sync-alt"></i>
+                <p>
+                  Sincronismo
+                </p>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">
+                <i class="nav-icon fas fa-bell"></i>
+                <p>
+                  Alarmes
+                </p>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+        <!-- /.sidebar-menu -->
+      </div>
+      <!-- /.sidebar -->
+    </aside>
+
+    <!-- Content Wrapper. Contains page content -->
+    <div class="content-wrapper">
+      <!-- Content Header (Page header) -->
+      <section class="content-header">
+        <div class="container-fluid">
+          <div class="row mb-2">
+            <div class="col-sm-6">
+              <h1>Convidar Pessoa</h1>
+            </div>
+            <div class="col-sm-6">
+              <ol class="breadcrumb float-sm-right">
+                <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                <li class="breadcrumb-item active">Convidar Pessoa</li>
+              </ol>
+            </div>
+          </div>
+        </div><!-- /.container-fluid -->
+      </section>
+
+      <!-- Main content -->
+      <section class="content">
+
+        <div class="card">
+          <form>
+            <div class="card-body">
+              <div class="form-group">
+                <label for="name">Nome</label>
+                <input type="text" class="form-control" value="Ana Maria" id="name" disabled>
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" class="form-control" value="email@email.com" id="email" disabled>
+              </div>
+              <div class="form-group">
+                <label for="phone">Celular</label>
+                <input type="text" class="form-control" value="(11) 1111-1111" id="phone" disabled>
+              </div>
+            </div>
+            <!-- /.card-body -->
+          </form>
+
+          <div class="card-footer">
+            <button class="btn btn-outline-primary" onclick="showPrevEmail()">Visualizar E-mail</button>
+            <button class="btn btn-primary">Convidar por E-mail</button>
+          </div>
+        </div>
+
+        <!-- E-mail preview-->
+
+        <div class="card" id="email_preview" hidden>
+          <div style="max-width: 680px; margin: 0 auto;" class="email-container">
+
+            <!-- Email Body : BEGIN -->
+            <table role="presentation" cellspacing="0" cellpadding="0" width="100%" style="margin: auto;">
+              <!-- Background Image with Text : BEGIN -->
+              <tbody>
+                <tr>
+                  <td
+                    style="text-align: center; background-image: url(''); background-color: #f0f8ff; background-position: center center !important; background-size: cover !important;">
+                    <div>
+                      <table role="presentation" cellpadding="0" cellspacing="0" width="100%"
+                        style="max-width:500px; margin: auto;">
+
+
+                        <tbody>
+                          <tr>
+                            <td
+                              style="text-align: center; padding: 10px 15px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #000000;">
+                              <div style="text-align: left; ">
+                                <p style="margin: 0 0 10px 0; color: #000000;">Olá <b>Ana Maria</b></p>
+                                <p style="margin: 0 0 10px 0; color: #000000;">Este e-mail é para
+                                  cadastramento de sua foto na plataforma SMART PASS.</p>
+                                <p style="margin: 0 0 10px 0; color: #000000;">Ao clicar no botão abaixo,
+                                  você será redirecionado para a página de cadastro.</p>
+
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td style="padding: 0 20px 20px;">
+                              <table align="center" role="presentation" cellspacing="0" cellpadding="0" border="0"
+                                style="margin: auto;">
+                                <tbody>
+                                  <tr>
+                                    <td class="button-td button-td-primary"
+                                      style="border-radius: 4px; background: #3a2eea;">
+                                      <a class="button-a button-a-primary"
+                                        href="https://dev.smartpass-app.com/register/a5be78de-7cc0-4091-8206-e234073b2ace"
+                                        target="_blank"
+                                        style="background: #3a2eea; border: 1px solid #000000; font-family: sans-serif; font-size: 15px; line-height: 15px; text-decoration: none; padding: 13px 17px; color: #ffffff; display: block; border-radius: 4px;">
+                                        ACESSAR
+                                      </a>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                              </table>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              style="text-align: center; padding: 10px 15px; font-family: sans-serif; font-size: 15px; line-height: 20px; color: #000000;">
+                              <div style="text-align: left; ">
+                                <p style="margin: 0 0 10px 0; color: #000000;">Algumas recomendações para
+                                  cadastrar a sua foto:
+                                </p>
+                                <ul>
+                                  <li>Usar de preferência a câmera do celular, na posição vertical, estilo
+                                    selfie</li>
+                                  <li>A foto deve ser semelhante à utilizada em passaportes e vistos de
+                                    viagem:</li>
+                                  <ul>
+                                    <li>Fundo neutro, de preferência branco, evitando grandes fonte de
+                                      luz ao fundo como lâmpadas ou janelas</li>
+                                    <li>Rosto ocupando a maior parte da área da foto</li>
+                                    <li>Rosto iluminado, descoberto e cabelo preso</li>
+                                    <li>Sem máscara, óculos, chapéu ou boné</li>
+                                    <li>Sem maquiagem e adornos</li>
+                                    <li>Expressão facial neutra</li>
+                                    <li>Olhando diretamente para a câmera (rosto posicionado de frente –
+                                      evitando ângulos para os lados ou para baixo/cima)</li>
+                                    <li>Garantir que a foto não está borrada</li>
+                                    <li>Olhos abertos</li>
+                                  </ul>
+                                </ul>
+                                <p></p>
+                                <p style="margin: 0 0 10px 0; color: #000000;">Essa foto não terá nenhum
+                                  outro objetivo ou utilização senão a de biometria facial.</p>
+                                <p style="margin: 0 0 10px 0; color: #000000;">Quanto melhor a qualidade da
+                                  foto, melhor será a velocidade e acurácia do reconhecimento facial.</p>
+                                <p style="margin: 0 0 10px 0; color: #000000;">Após o cadastro da foto, a
+                                  página de confirmação será apresentada.</p>
+                                <p style="margin: 0 0 10px 0; color: #000000;">Pronto, você cadastrou a sua
+                                  foto e será informado caso não atenda aos requisitos necessários.</p>
+
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td
+                              style="text-align: center; padding: 10px 15px; font-family: sans-serif; font-size: 10px; line-height: 20px; color: #000000;">
+                              <div style="text-align: left; ">
+                                <p style="margin: 0 0 10px 0; color: #000000;">Atenção: este é um e-mail
+                                  automático, favor não responder.</p>
+
+                              </div>
+                            </td>
+                          </tr>
+
+                        </tbody>
+                      </table>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+      </section>
+      <!-- /.content -->
+    </div>
+    <!-- /.content-wrapper -->
+
+    <footer class="main-footer">
+      <strong> SmartPass - Konitech</strong>
+    </footer>
+
+    <!-- Control Sidebar -->
+    <aside class="control-sidebar control-sidebar-dark">
+      <!-- Control sidebar content goes here -->
+    </aside>
+    <!-- /.control-sidebar -->
+  </div>
+  <!-- ./wrapper -->
+
+  <!-- jQuery -->
+  <script src="../../plugins/jquery/jquery.min.js"></script>
+  <!-- Bootstrap 4 -->
+  <script src="../../plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <!-- AdminLTE App -->
+  <script src="../../dist/js/adminlte.min.js"></script>
+  <!-- AdminLTE for demo purposes -->
+  <script src="../../dist/js/demo.js"></script>
+
+</body>
+
+</html>
